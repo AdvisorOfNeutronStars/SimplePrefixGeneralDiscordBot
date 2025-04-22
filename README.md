@@ -10,4 +10,7 @@ if (!message.content.startsWith('>') || message.author.bot) return;
 
 where the '>' you can change the > to whatever, like if (!message.content.startsWith('?') || message.author.bot) return;
 
+
+feel free to join https://discord.gg/7b6BFMygJq to give suggestions!
+
 # NEVER GIVE ANYONE YOUR BOTS TOKEN!
