@@ -6,6 +6,8 @@ Also do not forget to rename .env-Example to .env once setup.
 
 The only prefix set for this bot currently is '>' you can change it however, by going to index.js file and changing this:
 
+if (!message.content.startsWith('>') || message.author.bot) return; 
 
+where the '>' you can change the > to whatever, like if (!message.content.startsWith('?') || message.author.bot) return;
 
 # NEVER GIVE ANYONE YOUR BOTS TOKEN!
