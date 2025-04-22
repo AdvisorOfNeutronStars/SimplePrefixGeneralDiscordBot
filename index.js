@@ -13,7 +13,7 @@ const client = new Client({
 
 function hasStaffRole(member) {
     // Check if the member has a role with the specified ID
-    return member.roles.cache.has('1342198176203149403');
+    return member.roles.cache.has('role ID');
   }
 
 // Bot ready event
@@ -127,15 +127,15 @@ client.on('messageCreate', (message) => {
         .setTitle('Current Staff!')
         .setDescription('Heres a List of current staff as of Febuary 2nd 2025 at 2:56am')
         .addFields(
-            {name: 'Owner', value: '@boltythefluffywolf (1339253557567684641)'},
-            {name: 'Co-Owners', value: '@toxii_xd (748568720615669810), @ziggy_1102 (525784582864502785), and @mathew_653(264581569094615040)'},
-            {name: 'Admins', value: '@nightmanager541. (1217344647597391924) and @huggent0175 (1065458702901067846)'},
-            {name: 'Moderators', value: '@planedash (878080926402359329) and @timberfox_06 (816306529477197914)'},
+            {name: 'Owner', value: 'Owner'},
+            {name: 'Co-Owners', value: 'Co Owners'},
+            {name: 'Admins', value: 'Admins'},
+            {name: 'Moderators', value: 'Mods'},
             {name: 'Trainee Staff', value: 'None Currently'}
         )
         .setColor('Random')
-        .setThumbnail('https://cdn.discordapp.com/avatars/1100193726216818698/54a2e15db4924f4fc12e9b832a715e19.webp?size=512')
-        .setURL('https://cdn.discordapp.com/attachments/1332447460928262315/1335523491843149866/image0.gif?ex=67a07aad&is=679f292d&hm=8b8920aa5611e03e79872463858b696bfa74d8fe8f8601a175e86724b26b60f9&')
+        .setThumbnail('Avatar')
+        .setURL('URL')
         .setTimestamp(new Date())
         .setFooter({ text: `Used by ${message.author.tag} using the !staff command`, iconURL: message.author.displayAvatarURL() });
         message.channel.send({ embeds: [embed] });
@@ -159,7 +159,7 @@ client.on('messageCreate', (message) => {
     } else if (command === 'about') {
         const embed = new EmbedBuilder()
             .setTitle('About Me')
-            .setDescription('Nibbly Botter 2.0 is made by boltythefluffywolf as a practice project! boltythefluffywolf is still practicing Please note not everything might be correct')
+            .setDescription('About')
             .setColor('DarkVividPink')
         message.channel.send({ embeds: [embed] });
     } else if (command === 'rr') {
