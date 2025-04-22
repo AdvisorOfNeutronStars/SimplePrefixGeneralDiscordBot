@@ -21,7 +21,7 @@ client.once('ready', () => {
     console.log(`${client.user.tag} is online!`);
     client.user.setPresence({
         activities: [{ 
-            name: 'The Pawsome Community be berry siwwy!', 
+            name: 'Change your bots presence here', 
             type: ActivityType.Watching
         }],
         status: 'idle'
