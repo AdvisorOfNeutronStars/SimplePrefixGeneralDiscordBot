@@ -1,5 +1,7 @@
 # SimplePrefixGeneralDiscordBot
 
+I will eventually be updating this a bit more later on.
+
 All you need to do is edit the presense and create your .env file with your bot config.
 
 Also do not forget to rename .env-Example to .env once setup.
